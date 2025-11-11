@@ -1,19 +1,22 @@
 # 1. Sets remove duplicate values:
 s = {2, 3, 4, 3, 2, 6}
-print("1. Sets remove duplicate values:", s)
+print("\n1. Sets remove duplicate values:", s)
 
 # 2. Sets can store different types of values:
 info = {"Carla", 29, False, 5.9, 29}
-print("2. A single set can store different types of values: ", info)
+print("\n2. A single set can store different types of values: ", info)
 print(type(info))
 
 # 3. Creating empty dictionaries and sets:
+print("\n3. Creating empty dictionaries and sets:")
 harry = {}
 print(type(harry))
 
 potter = set()
 print(type(potter))
 
+# 4. Iterating through a set:
+print("\n4. Iterating through a set:")
 for value in info:
     print(value)
 ###########################
