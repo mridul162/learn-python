@@ -45,3 +45,38 @@ def sum(a,b=0):
 n = sum(5)
 print("Total Outside: ", n)
 print("Total Outside: ", total)
+
+# Function with multiple return values
+def arithmetic_operations(x, y):
+    add = x + y
+    sub = x - y
+    mul = x * y
+    div = x / y
+    return add, sub, mul, div
+
+a, s, m, d = arithmetic_operations(10, 5)
+print("Addition: ", a)
+print("Subtraction: ", s)
+print("Multiplication: ", m)
+print("Division: ", d)
+result = arithmetic_operations(20, 4)
+print("Results as a tuple: ", result)
+
+# Function with variable number of arguments
+def multiply(*args):
+    result = 1
+    for num in args:
+        result = result * num
+    return result
+print("Multiplication of 2, 3: ", multiply(2, 3))
+print("Multiplication of 2, 3, 4, 5: ", multiply(2, 3, 4, 5))
+print("Multiplication of 1, 2, 3, 4, 5, 6: ", multiply(1, 2, 3, 4, 5, 6))
+
+# Function with keyword arguments
+def person_info(name, age, city):
+    print("Name: ", name)
+    print("Age: ", age)
+    print("City: ", city)
+person_info(age=30, city="New York", name="Alice")
+person_info("Bob", city="Los Angeles", age=25)
+person_info("Charlie", 28, "Chicago")
